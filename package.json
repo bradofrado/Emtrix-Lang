@@ -1,0 +1,25 @@
+{
+    "name": "emtrix-lang",
+    "displayName": "Emtrix Lang",
+    "description": "Syntax highlighting for emtrix lang",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.66.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "emtrix",
+            "aliases": ["Emtrix", "emtrix"],
+            "extensions": [".em"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "emtrix",
+            "scopeName": "source.em",
+            "path": "./syntaxes/emtrix.tmLanguage.json"
+        }]
+    }
+}
